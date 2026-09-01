@@ -12,13 +12,13 @@ public class holaController {
 
     @GetMapping("saludoGet")
     public String HolaMundo(){
-        return "¡Hola, Mundo Post!";
+        return "¡Hola, Mundo (Get)";
     }
 
 
     @PostMapping
     public String HolaMundoPost(){
-        return "¡Hola, Mundo! (POST)";
+        return "¡Hola, Mundo (Post)";
     }
 
 }
