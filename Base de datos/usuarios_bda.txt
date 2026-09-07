@@ -1,0 +1,38 @@
+-- 1. Tabla REGIONES
+CREATE TABLE REGIONES (
+    id_region BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nombre_region VARCHAR(100) NOT NULL
+);
+
+-- 2. Tabla COMUNAS
+CREATE TABLE COMUNAS (
+    id_comuna BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nombre_comuna VARCHAR(100) NOT NULL,
+    id_region BIGINT NOT NULL,
+    CONSTRAINT fk_comunas_regiones FOREIGN KEY (id_region) REFERENCES REGIONES (id_region) ON DELETE CASCADE
+);
+
+-- 3. Tabla USUARIOS
+CREATE TABLE USUARIOS (
+    id_usuario BIGINT AUTO_INCREMENT PRIMARY KEY,
+    p_nombre VARCHAR(50) NOT NULL,
+    s_nombre VARCHAR(50) NOT NULL,
+    p_apellido VARCHAR(50) NOT NULL,
+    s_apellido VARCHAR(50) NOT NULL,
+    correo_elec VARCHAR(100) NOT NULL UNIQUE,
+    num_telefono VARCHAR(20) NOT NULL,
+    contrasena VARCHAR(255) NOT NULL,
+    permiso_admin BOOLEAN NOT NULL DEFAULT FALSE,
+    id_region BIGINT NOT NULL,
+    CONSTRAINT fk_usuarios_regiones FOREIGN KEY (id_region) REFERENCES REGIONES (id_region)
+);
+
+-- Datos iniciales de prueba (Opcional)
+INSERT INTO REGIONES (id_region, nombre_region) VALUES 
+(1, 'Región Metropolitana'),
+(2, 'Valparaíso');
+
+INSERT INTO COMUNAS (id_comuna, nombre_comuna, id_region) VALUES 
+(1, 'Santiago', 1),
+(2, 'Maipú', 1),
+(3, 'Viña del Mar', 2);
