@@ -1,10 +1,10 @@
-package com.example.holaMundo;
+package com.example.api_usuarios;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HolaMundoApplicationTests {
+class ApiUsuariosApplicationTests {
 
 	@Test
 	void contextLoads() {

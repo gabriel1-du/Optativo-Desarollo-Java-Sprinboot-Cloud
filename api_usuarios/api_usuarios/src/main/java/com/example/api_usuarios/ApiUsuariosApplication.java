@@ -1,13 +1,13 @@
-package com.example.holaMundo;
+package com.example.api_usuarios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HolaMundoApplication {
+public class ApiUsuariosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HolaMundoApplication.class, args);
+		SpringApplication.run(ApiUsuariosApplication.class, args);
 	}
 
 }
