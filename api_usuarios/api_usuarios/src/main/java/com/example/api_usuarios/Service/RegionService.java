@@ -12,9 +12,11 @@ public interface RegionService {
 
     public Region getRegionById(Long id_region); //por id
 
-    //public Region saveRegion(Region region); // guardar region
+    public Region saveRegion(Region region); // guardar region
 
-    //public Region putRegion(Region region); //actualizar region   
+    public Region putRegion(Region region, Long id_region); //actualizar region   
+
+    void deleteRegion(Long id_region);
 
 
 
