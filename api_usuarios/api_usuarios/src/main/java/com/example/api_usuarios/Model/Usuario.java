@@ -45,6 +45,15 @@ public class Usuario {
     @Column (name = "num_telefono", nullable = false)
     private String num_telefono;
 
+    //rut_dv VARCHAR(1) NOT NUll ,
+    //rut_cuerpo VARCHAR(9) NOT NULL,
+
+    @Column (name = "rut_dv", nullable = false)
+    private String rut_dv;
+
+    @Column (name = "rut_cuerpo", nullable = false)
+    private String rut_cuerpo;
+
     //seguridad
     @Column (name = "contrasena", nullable = false)
     private String contrasena;

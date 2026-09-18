@@ -14,6 +14,8 @@ public interface ComunaService {
 
     public Comuna saveComuna(Comuna comuna); // guardar comuna
 
-    public Comuna putComuna(Comuna comuna); //actualizar comuna
+    public Comuna putComuna(Comuna comuna, Long id_comuna); //actualizar comuna
+
+    public void deleteComuna(Long id);
 
 }

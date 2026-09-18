@@ -1,5 +1,6 @@
 package com.example.api_usuarios.Model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -21,6 +22,9 @@ public class Comuna {
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_comuna;
+
+    @Column(name = "nombre_comuna" , nullable = false)
+    private String nombre_comuna;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_region", nullable = false)
