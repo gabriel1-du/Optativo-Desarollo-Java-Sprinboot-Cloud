@@ -90,6 +90,10 @@ El ecosistema se divide en microservicios independientes con sus propias fuentes
 
 ![Diagrama Api Usuarios](<Diagramas/Arq Apis/Diagramas base de datos/diagramaApiuUsuarios.png>)
 
+### Diagrama api_compras
+
+![Diagrama Api Compras](<Diagramas/Arq Apis/Diagramas base de datos/diagramaComprasApi.png>)
+
 
 ---
   
