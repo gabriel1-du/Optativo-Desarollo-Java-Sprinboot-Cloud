@@ -109,5 +109,6 @@ El ecosistema se divide en microservicios independientes con sus propias fuentes
 ## Ramas Git :
 
  - **Master** : Versiones estables o finalizadas 
- - **usuarios_api/usuarios_bda** : Desarollo del microservicio y base de datos para la sección de Usuarios
+ - **usuarios_api/usuarios_db** : Desarollo del microservicio y base de datos para la sección de Usuarios
+- **api_compras/compras_db : Actualmente en desarrollo...
  
