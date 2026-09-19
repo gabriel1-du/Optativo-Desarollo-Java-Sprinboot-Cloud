@@ -1,4 +1,4 @@
--- 1. Tabla MEDIOS_PAGO
+-- 2. Tabla MEDIOS_PAGO
 CREATE TABLE MEDIOS_PAGO (
     id_medio_pago BIGINT AUTO_INCREMENT PRIMARY KEY,
     nombre_medio VARCHAR(50) NOT NULL,
